@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "LiteCat's 的逆天Blog"
+title: "LiteCat 的小屋"
 subtitle: 'LiteCat'
 description: 'LiteCat的个人博客，分享日常、技术分享、网站推荐、设计资源等内容'
 keywords: litecat
@@ -14,7 +14,7 @@ favicon: https://pic.imgdb.cn/item/6405d98bf144a0100775ce62.png
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.litecat.buzz
-permalink: :year/:month/:day/:title/
+permalink: posts/:title.html # 也可以直接写 :abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -54,7 +54,7 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: '  '
-post_asset_folder: true
+post_asset_folder: false
 marked:
   prependRoot: true
   postAsset: true
@@ -92,9 +92,7 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -105,3 +103,13 @@ theme: volantis
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: " "
+  order_by: -date

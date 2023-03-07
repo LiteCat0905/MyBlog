@@ -134,7 +134,7 @@ rightmenus:
   menus:
     link:
       # - {id: 'help', name: '常见问题', icon: 'fa-solid fa-question', link: 'https://volantis.js.org/faqs/', group: 'link'}
-      # - {id: 'examples', name: '示例博客', icon: 'fa-solid fa-rss', link: 'https://volantis.js.org/examples/', group: 'link'}
+      - {id: 'RSS', name: 'RSS', icon: 'fa-solid fa-rss', link: 'https://www.litecat.buzz/atom.xml', group: 'link'}
       # - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
       # - hr
       - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/LiteCat0905/MyBlog', group: 'link'}
@@ -368,8 +368,8 @@ sidebar:
       display: [desktop, mobile] # [desktop, mobile]
       height: 64px  # Automatic height if not set
       images:
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - https://pic.imgdb.cn/item/6405ef77f144a010079d2753.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - https://pic.imgdb.cn/item/6405ef77f144a010079d2753.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # ---------------------------------------
     # webinfo widget
     webinfo:
